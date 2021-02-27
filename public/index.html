@@ -35,18 +35,30 @@
     -->
     
   <!-- Replace script tags below with the config from your own Firebase app -->
-  <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
   <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyCrkOncSS_rp5hW05fn1zXMIqlMvBYy3_E",
-      authDomain: "agile-poker-6c31f.firebaseapp.com",
-      databaseURL: "https://agile-poker-6c31f.firebaseio.com",
-      projectId: "agile-poker-6c31f",
-      storageBucket: "agile-poker-6c31f.appspot.com",
-      messagingSenderId: "121785768337"
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCKaZtd8BBDh_ph-tv5MoTISyRoIz92u6c",
+      authDomain: "gigiary-143712.firebaseapp.com",
+      databaseURL: "https://gigiary-143712-default-rtdb.firebaseio.com",
+      projectId: "gigiary-143712",
+      storageBucket: "gigiary-143712.appspot.com",
+      messagingSenderId: "850701117751",
+      appId: "1:850701117751:web:8c7b0fcc9b474e27f6d2b2",
+      measurementId: "G-ZKJ298E388"
     };
-    firebase.initializeApp(config);
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
   </script>
 </body>
 
